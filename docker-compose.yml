@@ -39,7 +39,9 @@ services:
 
 volumes:
   panel-data:
+    external: true
   panel-logs:
+    external: true
 
 networks:
   default:
