@@ -1,15 +1,16 @@
-version: '3.8'
+version: "3.8"
 
 services:
+
   panel:
     image: ghcr.io/pterodactyl/panel:latest
     container_name: panel
     restart: always
     ports:
-      - "49610:80"
+      - 49610:80
     volumes:
-      - "panel-data:/app/var/"
-      - "panel-logs:/app/storage/logs"
+      - panel-data:/app/var/
+      - panel-logs:/app/storage/logs
     environment:
       APP_URL: ${APP_URL}
       APP_TIMEZONE: ${APP_TIMEZONE}
