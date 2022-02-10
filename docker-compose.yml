@@ -3,7 +3,7 @@ version: "3.8"
 services:
 
   panel:
-    image: ghcr.io/pterodactyl/panel:latest
+    image: ghcr.io/mcplaynetwork/panel:develop
     container_name: panel
     restart: always
     ports:
